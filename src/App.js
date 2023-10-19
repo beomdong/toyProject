@@ -5,7 +5,7 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <div>
+    <div className='page-container'>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

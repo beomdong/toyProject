@@ -2,21 +2,23 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <nav>
+    <nav className="header">
       <h1>
-        <img src="./img/title.png" alt="" />
+        <a href="/">
+          <img src="./img/title.png" alt="" />
+        </a>
       </h1>
-      <ul>
-        <li> 회사 소개 </li>
-        <li> 서비스 </li>
-        <li> 함께가치 </li>
-        <li> 뉴스룸 </li>
+      <ul className="header-middle">
+        <li className="menu-list"> 회사 소개 </li>
+        <li className="menu-list"> 서비스 </li>
+        <li className="menu-list"> 함께가치 </li>
+        <li className="menu-list"> 뉴스룸 </li>
       </ul>
       <div>
-        <span>로그인</span> | <span>회원가입</span>
+        <span className="menu-list">로그인</span> | <span className="menu-list">회원가입</span>
       </div>
     </nav>
-  )
+  );
 }
 
 export default Header
